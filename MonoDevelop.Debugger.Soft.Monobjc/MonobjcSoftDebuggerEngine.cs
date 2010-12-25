@@ -27,11 +27,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Mono.Debugging;
+using Mono.Debugging.Client;
 using MonoDevelop.Debugger;
 using MonoDevelop.Core;
 using MonoDevelop.Core.Execution;
 using MonoDevelop.Monobjc;
-using Mono.Debugging.Client;
 using MonoDevelop.Debugger.Soft;
 using System.Net;
 using System.Linq;

@@ -25,11 +25,10 @@
 // THE SOFTWARE.
 
 using System;
-using Mono.Debugger;
-using Mono.Debugging;
-using Mono.Debugging.Client;
 using System.Threading;
 using System.Diagnostics;
+using Mono.Debugging;
+using Mono.Debugging.Client;
 using MonoDevelop.Monobjc;
 using System.IO;
 using MonoDevelop.Core;
@@ -37,11 +36,14 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Collections.Generic;
+using MonoDevelop.Debugger;
+
 
 namespace MonoDevelop.Debugger.Soft.Monobjc
 {
 	public class MonobjcDebuggerSession : RemoteSoftDebuggerSession
 	{
+		
 		System.Diagnostics.Process process;
 		
 		protected override void OnRun (DebuggerStartInfo startInfo)
@@ -106,7 +108,8 @@ namespace MonoDevelop.Debugger.Soft.Monobjc
 		}
 	}
 	
-	class MonobjcDebuggerStartInfo : RemoteDebuggerStartInfo
+	
+	class MonobjcDebuggerStartInfo : RemoteDebuggerStartInfo 
 	{
 		public MonobjcExecutionCommand ExecutionCommand { get; private set; }
 		

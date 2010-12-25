@@ -31,8 +31,8 @@
 
 using System;
 using Gtk;
-using MonoDevelop.Projects.Gui.Dialogs;
 using MonoDevelop.Core;
+using MonoDevelop.Ide.Gui.Dialogs;
 using MonoDevelop.Projects;
 
 namespace MonoDevelop.Monobjc.Gui
